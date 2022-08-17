@@ -1,0 +1,10 @@
+**/*.jpg
+**/*.jpeg
+**/*.bmp
+**/*.png
+**/*.tif
+/image
+**/*.DS_Store
+**/*.idea
+**/__pycache__
+**/*.log
