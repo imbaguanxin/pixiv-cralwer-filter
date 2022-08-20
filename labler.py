@@ -44,4 +44,4 @@ def label(img_path, dest_path):
 
 
 if __name__ == '__main__':
-    label("image/20220709-week", "image/label_result")
+    label("image/20220626-daily", "image/label_result")

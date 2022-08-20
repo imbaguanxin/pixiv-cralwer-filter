@@ -1,7 +1,7 @@
 import datetime
 
 RANKING_CONFIG = {
-    "START_DATE": datetime.date(2022, 7, 9),
+    "START_DATE": datetime.date(2022, 8, 18),
     "N_RANKING": 1,
     "AVAILABLE_RANKING_MODES": [
         "daily", "weekly", "monthly",
@@ -12,9 +12,9 @@ RANKING_CONFIG = {
     "AVAILABLE_ART_TYPE": [
       "illust", "ugoira", "manga"
     ],
-    "RANKING_MODE": "weekly",
+    "RANKING_MODE": "daily",
     "ART_TYPE": "illust",  # may omit for all (cannot appear with male/female)
-    "TOP_N": 200,
+    "TOP_N": 100,
 }
 
 OUTPUT_CONFIG = {
@@ -35,8 +35,8 @@ USER_CONFIG = {
 }
 
 DOWNLOAD_CONFIG = {
-    "STORE_PATH": "/Users/gx/repo/pixiv/image/20220709-week",
-    "LOG_PATH": "/Users/gx/repo/pixiv/image/20220709-week/log",
+    "STORE_PATH": f"/home/gx/repo/pixiv/image/{RANKING_CONFIG['START_DATE'].strftime('%Y%m%d')}-{RANKING_CONFIG['RANKING_MODE']}",
+    "LOG_PATH": f"/home/gx/repo/pixiv/image/{RANKING_CONFIG['START_DATE'].strftime('%Y%m%d')}-{RANKING_CONFIG['RANKING_MODE']}/log",
     "RETRY_TIMES": 5,
     "WITH_TAG": False,
     "FAIL_DELAY_SECOND": 2,
